@@ -25,9 +25,9 @@ export default function Home() {
           <CardStory />
         </Wrapper>
 
-        <ComponentsBuilder>
+        {/* <ComponentsBuilder>
           <CardCodeEditor />
-        </ComponentsBuilder>
+        </ComponentsBuilder> */}
       </AppContainer>
     </Container>
   );
@@ -45,7 +45,8 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  /* height: 100%; */
   font-family: "Inter", sans-serif;
   background-image: ${(props) =>
     props.backgroundState &&
