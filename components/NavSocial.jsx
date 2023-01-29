@@ -41,9 +41,9 @@ const ItemList = styled.li`
     color: var(--color-twitter);
   }
 
-  &:hover a {
+  /* &:hover a {
     color: var(--color-twitter);
-  }
+  } */
 `;
 
 const ItemLink = styled.a`
