@@ -13,8 +13,8 @@ export const Hero = () => {
 
   return (
     <S.Section color={transitionColor}>
-      <Splash colors="#F9CB28" size={120} top={0} left={50} />
-      <Splash colors="#007CF0" size={120} bottom={100} right={50} rotate={90} />
+      <Splash colors="#FBA234" size={120} top={0} left={50} />
+      <Splash colors="#00D2DB" size={120} bottom={100} right={50} rotate={90} />
       <div className="hero-header">
         <span>hey!</span>
         <S.Welcome src="/love-you-gesture.webp" />
