@@ -4,8 +4,12 @@ import { BsGithub, BsTwitter } from "react-icons/bs";
 
 export const NavSocial = () => {
   const items = [
-    { icon: <BsTwitter />, url: "", className: "twitter" },
-    { icon: <BsGithub />, url: "" },
+    {
+      icon: <BsTwitter />,
+      url: "https://twitter.com/SwiichyCode_",
+      className: "twitter",
+    },
+    { icon: <BsGithub />, url: "https://github.com/SwiichyCode" },
   ];
   return (
     <Navigation>
