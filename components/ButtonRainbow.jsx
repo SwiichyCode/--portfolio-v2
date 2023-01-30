@@ -37,5 +37,5 @@ const StyledRainbowButton = styled(StyledButton)`
   filter: ${(props) => props.currentTheme.theme};
   border: ${(props) => props.currentTheme.border};
   font-weight: 600;
-  font-size: var(--font-size-13);
+  z-index: 2;
 `;

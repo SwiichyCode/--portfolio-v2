@@ -11,13 +11,24 @@ export const Hero = () => {
   const transitionColor = useGradientTransition(5000);
   const size = useWindowSize();
 
+  const handleClickScroll = () => {
+    const element = document.getElementById("about-section");
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   return (
     <S.Section color={transitionColor}>
       <Splash
         colors="#FBA234"
         size={120}
-        top={0}
-        left={size.width > 550 ? 50 : null}
+        top={size.width > 550 ? 0 : -30}
+        left={size.width > 550 ? 50 : -20}
         right={size.width > 550 ? null : 0}
       />
       <Splash
@@ -45,7 +56,7 @@ export const Hero = () => {
       </div>
       <div className="hero-footer">
         <div className="wrapper">
-          <S.ExploreButton>
+          <S.ExploreButton onClick={handleClickScroll}>
             Start {size.width > 550 && "Exploration"}
           </S.ExploreButton>
           <ButtonRainbow themes={rainbowBtnTheme} mWidth={130}>

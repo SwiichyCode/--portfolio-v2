@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const CardStory = () => {
+export const HeroStep = () => {
   return (
     <Container>
       <h3>What awaits you:</h3>
