@@ -34,7 +34,7 @@ export const Hero = () => {
       <Splash
         colors="#00D2DB"
         size={120}
-        bottom={100}
+        bottom={230}
         right={size.width > 550 ? 50 : 0}
         rotate={90}
       />

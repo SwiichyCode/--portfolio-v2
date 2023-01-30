@@ -37,6 +37,7 @@ export default function Home() {
           </RemoveScroll>
         )}
         <Header />
+
         <Wrapper>
           <Hero />
           <HeroStep />
@@ -98,7 +99,7 @@ const CardWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: calc(100vh - 87px);
   position: relative;
   display: flex;
   flex-direction: column;

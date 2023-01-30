@@ -9,7 +9,7 @@ export const Section = styled.section`
   color: var(--text-color);
   filter: var(--filterShadow);
   padding: 15rem 2.4rem 8rem 2.4rem;
-
+  /* height: 100vh; */
   @media (max-width: 550px) {
     padding: 5rem 2.4rem 8rem 2.4rem;
   }
