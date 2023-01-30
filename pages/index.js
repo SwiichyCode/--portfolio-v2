@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useStore from "@/stores/backgroundStore";
 import styled from "styled-components";
 import { Header } from "@/components/Header";
@@ -6,12 +5,10 @@ import { Hero } from "@/components/Hero";
 import { CardStory } from "@/components/CardStory";
 import { Tools } from "@/components/Tools";
 import { RemoveScroll } from "react-remove-scroll";
-import { TabsStory } from "@/components/TabsStory";
 
 export default function Home() {
   const backgroundState = useStore((state) => state.backgroundActive);
   const toolsState = useStore((state) => state.toolsActive);
-  const [selectedId, setSelectedId] = useState(null);
 
   return (
     <Container backgroundState={backgroundState}>
