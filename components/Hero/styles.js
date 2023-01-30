@@ -10,6 +10,10 @@ export const Section = styled.section`
   filter: var(--filterShadow);
   padding: 15rem 2.4rem 8rem 2.4rem;
 
+  @media (max-width: 550px) {
+    padding: 5rem 2.4rem 8rem 2.4rem;
+  }
+
   .hero-header {
     display: flex;
     align-items: center;
@@ -62,6 +66,7 @@ export const Section = styled.section`
 
     .wrapper {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 2rem;
     }

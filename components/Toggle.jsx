@@ -28,6 +28,10 @@ export const ToggleSwitchContainer = styled.div`
   opacity: 0.6;
   z-index: 1000;
 
+  @media screen and (max-width: 1110px) {
+    display: none;
+  }
+
   .react-switch-checkbox {
     position: absolute;
     height: 0;

@@ -13,6 +13,7 @@ body, button {
 --color-yellow: #F9CB28;
 --color-purple: #7928CA;
 --color-pink: #FF0080;
+--color-pink-400: rgba(255, 0, 128, 0.4);
 --color-white: #fff;
 --color-black: #000;
 --color-grey: #D8E0EA;
@@ -50,6 +51,7 @@ body, button {
 --font-weight-700: 700;
 
 --font-jetbrains: 'JetBrains Mono', monospace;
+--font-robotoMono: 'Roboto Mono', monospace;
 
 --fileredShadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 --fileredDynamic: drop-shadow(0px 4px 4px rgba(0, 124, 240, 0.25));

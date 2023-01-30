@@ -26,7 +26,7 @@ export const CardCodeEditor = () => {
 const Container = styled.div`
   width: 100%;
   max-width: 50rem;
-  border-radius: 0.8rem;
+  border-radius: var(--radius-md);
   background-color: #1e293b;
   box-shadow: var(--shadow-medium);
 

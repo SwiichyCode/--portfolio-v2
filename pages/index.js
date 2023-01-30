@@ -1,15 +1,17 @@
+import { useState } from "react";
+import useStore from "@/stores/backgroundStore";
 import styled from "styled-components";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { CardStory } from "@/components/CardStory";
 import { Tools } from "@/components/Tools";
-import { CardCodeEditor } from "@/components/CardCodeEditor";
 import { RemoveScroll } from "react-remove-scroll";
-import useStore from "@/stores/backgroundStore";
+import { TabsStory } from "@/components/TabsStory";
 
 export default function Home() {
   const backgroundState = useStore((state) => state.backgroundActive);
   const toolsState = useStore((state) => state.toolsActive);
+  const [selectedId, setSelectedId] = useState(null);
 
   return (
     <Container backgroundState={backgroundState}>
@@ -26,12 +28,19 @@ export default function Home() {
         </Wrapper>
 
         {/* <ComponentsBuilder>
-          <CardCodeEditor />
+          <TabsStory />
         </ComponentsBuilder> */}
       </AppContainer>
     </Container>
   );
 }
+
+const CardWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+`;
 
 const Wrapper = styled.div`
   height: 100%;
@@ -68,6 +77,12 @@ const Container = styled.div`
 
   @media (max-width: 1110px) {
     padding: 0 2.4rem;
+    height: 100vh;
+  }
+
+  @media (max-width: 550px) {
+    padding: 0 1.2rem;
+    height: 100%;
   }
 `;
 

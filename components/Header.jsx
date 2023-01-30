@@ -5,9 +5,16 @@ import { NavSocial } from "@/components/NavSocial";
 import { ToolsAccessButton } from "@/components/ToolsAccessButton";
 import { Toggle } from "@/components/Toggle";
 import useStore from "@/stores/backgroundStore";
-
+// import { useWindowSize } from "@/hooks/useWindowSize";
+import {
+  useWindowSize,
+  useWindowWidth,
+  useWindowHeight,
+} from "@react-hook/window-size";
 export const Header = () => {
   const toggleBackground = useStore((state) => state.toggleBackground);
+
+  const [width, height] = useWindowSize();
 
   return (
     <Container>
@@ -17,6 +24,7 @@ export const Header = () => {
       </Wrapper>
       <Wrapper>
         <Toggle handleToggle={toggleBackground} />
+        {/* <Toggle handleToggle={toggleBackground} /> */}
         <NavSocial />
         <ToolsAccessButton />
       </Wrapper>
