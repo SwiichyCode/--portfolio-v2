@@ -9,8 +9,6 @@ export const ToolsAccessButton = () => {
   const toolsActive = useStore((state) => state.toolsActive);
   const toggleTools = useStore((state) => state.toggleTools);
 
-  console.log(toolsActive);
-
   return (
     <Container>
       <ButtonRainbow onClick={toggleTools} themes={rainbowBtnTheme}>

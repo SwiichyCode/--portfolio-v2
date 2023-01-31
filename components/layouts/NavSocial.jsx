@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BsGithub, BsTwitter } from "react-icons/bs";
+import { HrefLink } from "../common/HrefLink";
 
 export const NavSocial = () => {
   const items = [
@@ -22,6 +23,11 @@ export const NavSocial = () => {
           </ItemList>
         ))}
       </List>
+      {/* <HrefLink
+        url="https://twitter.com/SwiichyCode_"
+        text="Twitter"
+        icon={<BsTwitter />}
+      /> */}
     </Navigation>
   );
 };

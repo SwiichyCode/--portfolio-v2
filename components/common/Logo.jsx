@@ -1,13 +1,14 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Logo = () => {
   return (
     <Container>
       <Patern className="patern">/</Patern>
-      <Text className="text">
+      <StyledLink href="/" className="text">
         <span>Swii</span>
         <span>chy.</span>
-      </Text>
+      </StyledLink>
     </Container>
   );
 };
@@ -38,11 +39,13 @@ const Patern = styled.div`
   transition: var(--transition-all);
 `;
 
-const Text = styled.div`
+const StyledLink = styled(Link)`
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: -0.2rem;
   transition: all 0.3s ease-in-out;
+  color: var(--color-black);
+  text-decoration: none;
 
   span:nth-child(2) {
     color: var(--color-blue);

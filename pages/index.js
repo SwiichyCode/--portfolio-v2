@@ -4,12 +4,10 @@ import { HeroStep } from "@/components/layouts/HeroStep";
 
 export default function Home() {
   return (
-    <HomeContainer>
-      <HeroWrapper>
-        <Hero />
-        <HeroStep />
-      </HeroWrapper>
-    </HomeContainer>
+    <HeroWrapper>
+      <Hero />
+      <HeroStep />
+    </HeroWrapper>
   );
 }
 
@@ -21,10 +19,4 @@ const HeroWrapper = styled.div`
   align-items: center;
   margin-left: -4.8rem;
   padding-left: 4.8rem;
-`;
-
-const HomeContainer = styled.div`
-  width: 100%;
-  max-width: 1550px;
-  margin: 0 auto;
 `;

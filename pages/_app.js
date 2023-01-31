@@ -1,7 +1,9 @@
 import GlobalStyle from "@/styles/globalStyles";
 import styled from "styled-components";
-import { Header } from "@/components/layouts/Header";
 import useStore from "@/stores/backgroundStore";
+import { Header } from "@/components/layouts/Header";
+import { RemoveScroll } from "react-remove-scroll";
+import { Tools } from "@/components/pages/Tools";
 import "../styles/main.css";
 
 export default function App({ Component, pageProps }) {
@@ -16,11 +18,19 @@ export default function App({ Component, pageProps }) {
           <Tools />
         </RemoveScroll>
       )}
-      <Header />
-      <Component {...pageProps} />
+      <AppWrapper>
+        <Header />
+        <Component {...pageProps} />
+      </AppWrapper>
     </Container>
   );
 }
+
+const AppWrapper = styled.div`
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+`;
 
 const Container = styled.div`
   width: 100%;
