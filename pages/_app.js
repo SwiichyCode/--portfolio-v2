@@ -13,11 +13,11 @@ export default function App({ Component, pageProps }) {
   return (
     <Container backgroundState={backgroundState}>
       <GlobalStyle />
-      {toolsState && (
-        <RemoveScroll>
-          <Tools />
-        </RemoveScroll>
-      )}
+
+      <RemoveScroll>
+        <Tools toolsState={toolsState} />
+      </RemoveScroll>
+
       <AppWrapper>
         <Header />
         <Component {...pageProps} />

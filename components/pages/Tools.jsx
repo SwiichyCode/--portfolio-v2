@@ -1,8 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Tools = () => {
-  return <Container></Container>;
+const show = {
+  opacity: 1,
+  display: "block",
+};
+
+const hide = {
+  opacity: 0,
+  transitionEnd: {
+    display: "none",
+  },
+};
+
+export const Tools = ({ toolsState }) => {
+  return (
+    <Container as={motion.div} animate={toolsState ? show : hide}></Container>
+  );
 };
 
 const Container = styled.div`

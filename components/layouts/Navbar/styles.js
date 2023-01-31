@@ -10,11 +10,11 @@ export const List = styled.ul`
   display: flex;
   align-items: center;
   gap: var(--gap-24);
-  padding-top: 0.4rem;
+  padding-top: 0.7rem;
 `;
 
 export const ItemList = styled.li`
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-16);
   font-weight: var(--font-weight-700);
   color: var(--text-color);
   transition: var(--transition-all);

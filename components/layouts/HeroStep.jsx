@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 export const HeroStep = () => {
   return (
@@ -9,12 +10,12 @@ export const HeroStep = () => {
         <div className="step__wrapper">
           <div className="index blue">1</div>
           <div className="line blue"></div>
-          <Card>About me</Card>
+          <StyledLink href="/about">About me</StyledLink>
         </div>
         <div className="step__wrapper">
           <div className="index orange">2</div>
           <div className="line orange"></div>
-          <Card>Projects</Card>
+          <StyledLink href="/">Projects</StyledLink>
         </div>
       </div>
     </Container>
@@ -86,21 +87,9 @@ const Container = styled.section`
   }
 `;
 
-const Card = styled.article`
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 5rem;
-  max-width: 20rem;
-  border-radius: 8px;
-  border: 1px solid var(--color-blue);
-  padding: 1rem;
-  background: var(--color-white);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.17);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.17); */
-
+const StyledLink = styled(Link)`
   font-family: var(--font-jetbrains);
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-22);
+  color: var(--text-color);
+  text-decoration: none;
 `;

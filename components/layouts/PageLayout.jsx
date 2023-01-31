@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-export const PageLayout = ({ children, title }) => {
+export const PageLayout = ({ children, fTitle, sTitle, subTitle }) => {
   return (
     <Container>
       <HeaderWrapper>
-        <Title>{title}</Title>
-        <Subtitle>
-          Explore my journey, skills, and goals as an aspiring web developer
-        </Subtitle>
+        <h1>{fTitle}</h1>
+        <h2>{sTitle}</h2>
+        <p>{subTitle}</p>
       </HeaderWrapper>
       {children}
     </Container>
@@ -26,15 +25,20 @@ const HeaderWrapper = styled.div`
   flex-direction: column;
   gap: 1.6rem;
   color: var(--text-color);
-`;
-
-const Title = styled.h1`
-  font-size: 6.4rem;
   font-family: "Roboto", sans-serif;
-  //roboto
-`;
 
-const Subtitle = styled.h2`
-  font-size: 2.4rem;
-  font-weight: 400;
+  h1 {
+    font-size: 2.4rem;
+    color: var(--color-blue);
+    padding-left: 1rem;
+  }
+
+  h2 {
+    font-size: 6.4rem;
+  }
+
+  p {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
 `;
