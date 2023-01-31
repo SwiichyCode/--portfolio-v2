@@ -19,4 +19,9 @@ const HeroWrapper = styled.div`
   align-items: center;
   margin-left: -4.8rem;
   padding-left: 4.8rem;
+
+  @media (max-width: 550px) {
+    height: 100%;
+    padding-bottom: 4.8rem;
+  }
 `;

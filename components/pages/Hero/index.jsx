@@ -50,10 +50,10 @@ export const Hero = () => {
           <span className="secondName">Jansana,</span>
         </h1>
         <p>
-          Junior front-end developer specialized in integration and user
-          interaction. I am currently focusing on developing my freelance
-          business. I am available for any professional inquiries and ready to
-          take on new projects.
+          Junior <strong>front-end developer</strong> specialized in integration
+          and user interaction. I am currently focusing on developing my
+          freelance business. I am available for any professional inquiries and
+          ready to take on new projects.
         </p>
       </div>
       <div className="hero-footer">

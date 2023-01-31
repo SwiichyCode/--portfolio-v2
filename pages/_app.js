@@ -59,8 +59,8 @@ const Container = styled.div`
     /* height: 100vh; */
   }
 
-  @media (max-width: 550px) {
+  @media screen and (max-width: 550px) {
     padding: 0 1.2rem;
-    /* height: 100%; */
+    height: 100%;
   }
 `;
