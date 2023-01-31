@@ -29,9 +29,7 @@ export const NavSocial = () => {
   );
 };
 
-const Navigation = styled.nav`
-  z-index: 1000;
-`;
+const Navigation = styled.nav``;
 
 const List = styled.ul`
   display: flex;
