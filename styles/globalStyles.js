@@ -21,7 +21,7 @@ body, button {
 --color-grey-200: rgba(0, 0, 0, .2);
 --color-twitter: #1c9aef;
 --color-react: #61DAFB;
-
+--color-tailwind: #38BDF8;
 --radius-md: 0.8rem;
 
 --text-color: #334155;
