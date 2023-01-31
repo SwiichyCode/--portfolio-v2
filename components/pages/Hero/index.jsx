@@ -37,7 +37,7 @@ export const Hero = () => {
         colors="#00D2DB"
         size={120}
         bottom={230}
-        right={size.width > 550 ? 50 : 0}
+        right={size.width > 550 ? 50 : 0 || size.width < 550 ? -70 : 0}
         rotate={90}
       />
       <div className="hero-header">
