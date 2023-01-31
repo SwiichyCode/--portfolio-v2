@@ -29,7 +29,7 @@ export const Section = styled.section`
       display: block;
       font-size: var(--font-size-big);
       letter-spacing: -0.2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
 
       @media (max-width: 1110px) {
         font-size: 5rem;
@@ -55,6 +55,7 @@ export const Section = styled.section`
 
       @media (max-width: 1110px) {
         font-size: 1.8rem;
+        max-width: 600px;
       }
     }
   }

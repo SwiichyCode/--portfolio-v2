@@ -89,7 +89,7 @@ export const About = () => {
 // professional goals
 const Container = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   padding: 5rem 2.4rem;
   color: var(--text-color);
@@ -108,6 +108,8 @@ const Container = styled.section`
   .body {
     width: 100%;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--gap-24);
     margin-top: 4.4rem;
     width: 100%;
@@ -115,7 +117,8 @@ const Container = styled.section`
 
     .card {
       width: 100%;
-      max-width: 50rem;
+
+      max-width: 40rem;
       background: rgba(255, 255, 255, 1);
       border: 1px solid rgba(255, 255, 255, 0.2);
       /* padding: 0 2.4rem; */
