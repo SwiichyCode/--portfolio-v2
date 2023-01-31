@@ -7,6 +7,7 @@ body, button {
 }
 
 :root {
+--header-height: 8.7rem;
 --color-blue: #007CF0;
 --color-cyan: #00DFD8;
 --color-orange: #ff4D4D;

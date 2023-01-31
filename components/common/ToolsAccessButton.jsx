@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { BsGear } from "react-icons/bs";
-import { ButtonRainbow } from "./ButtonRainbow";
+import { ButtonRainbow } from "@/components/common/ButtonRainbow";
 import { rainbowBtnTheme } from "@/styles/themes";
 import useStore from "@/stores/backgroundStore";
-import arrow from "@/public/arrow.svg";
+
 export const ToolsAccessButton = () => {
   const toolsActive = useStore((state) => state.toolsActive);
   const toggleTools = useStore((state) => state.toggleTools);

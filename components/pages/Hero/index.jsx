@@ -1,11 +1,11 @@
-import { Splash } from "@/components/Splash";
-import { ButtonRainbow } from "@/components/ButtonRainbow";
-import { rainbowBtnTheme } from "@/styles/themes";
-import { useGradientTransition } from "@/hooks/useGradientTransition";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
-import * as S from "./styles";
+import { Splash } from "@/components/common/Splash";
+import { ButtonRainbow } from "@/components/common/ButtonRainbow";
+import { rainbowBtnTheme } from "@/styles/themes";
+import { useGradientTransition } from "@/hooks/useGradientTransition";
 import { useWindowSize } from "@/hooks/useWindowSize";
+import * as S from "./styles";
 
 export const Hero = () => {
   const transitionColor = useGradientTransition(5000);

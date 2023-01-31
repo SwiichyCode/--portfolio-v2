@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Step } from "../Step";
+import { Step } from "../../features/Step";
 
 export const About = () => {
   return (

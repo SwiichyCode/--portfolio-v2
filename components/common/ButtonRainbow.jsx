@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { StyledButton } from "./Button";
+import { StyledButton } from "@/components/common/Button";
 
 export const ButtonRainbow = ({ onClick, themes, mWidth, children }) => {
   const [currentThemeIndex, setCurrentThemeIndex] = useState(0);
