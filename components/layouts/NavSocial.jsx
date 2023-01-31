@@ -10,24 +10,21 @@ export const NavSocial = () => {
       url: "https://twitter.com/SwiichyCode_",
       className: "twitter",
     },
-    { icon: <BsGithub />, url: "https://github.com/SwiichyCode" },
+    {
+      icon: <BsGithub />,
+      url: "https://github.com/SwiichyCode",
+      className: "github",
+    },
   ];
   return (
     <Navigation>
       <List>
         {items.map(({ icon, url, className }, index) => (
           <ItemList key={index}>
-            <ItemLink className={className} href={url}>
-              {icon}
-            </ItemLink>
+            <HrefLink href={url} icon={icon} className={className} />
           </ItemList>
         ))}
       </List>
-      {/* <HrefLink
-        url="https://twitter.com/SwiichyCode_"
-        text="Twitter"
-        icon={<BsTwitter />}
-      /> */}
     </Navigation>
   );
 };
@@ -47,17 +44,13 @@ const ItemList = styled.li`
   font-size: var(--font-size-20);
   background: transparent;
 
+  a {
+    color: var(--color-black);
+    border-radius: 8px;
+    padding: 0.7rem;
+  }
+
   .twitter {
     color: var(--color-twitter);
   }
-
-  /* &:hover a {
-    color: var(--color-twitter);
-  } */
-`;
-
-const ItemLink = styled.a`
-  color: var(--color-black);
-  border-radius: 8px;
-  padding: 0.7rem;
 `;

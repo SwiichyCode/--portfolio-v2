@@ -101,6 +101,10 @@ export const Section = styled.section`
         color: var(--color-react);
       }
 
+      .tailwind-icon {
+        color: var(--color-tailwind);
+      }
+
       span {
         width: 3.2rem;
         height: 3.2rem;

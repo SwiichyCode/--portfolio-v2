@@ -1,11 +1,13 @@
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 import { Splash } from "@/components/common/Splash";
 import { ButtonRainbow } from "@/components/common/ButtonRainbow";
 import { rainbowBtnTheme } from "@/styles/themes";
 import { useGradientTransition } from "@/hooks/useGradientTransition";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import * as S from "./styles";
+import { HrefLink } from "@/components/common/HrefLink";
 
 export const Hero = () => {
   const transitionColor = useGradientTransition(5000);
@@ -64,19 +66,30 @@ export const Hero = () => {
           </ButtonRainbow>
           <div className="icons">
             <p>Built with:</p>
-            <a href="https://nextjs.org/" className="next-icon">
-              <TbBrandNextjs />
-            </a>
-            <a href="https://fr.reactjs.org/" className="react-icon">
-              <FaReact />
-            </a>
-            <a href="https://styled-components.com/">
-              <span>💅</span>
-            </a>
+            <HrefLink
+              href="https://nextjs.org/"
+              icon={<TbBrandNextjs />}
+              className="next-icon"
+            />
+            <HrefLink
+              href="https://fr.reactjs.org/"
+              icon={<FaReact />}
+              className="react-icon"
+            />
+            <HrefLink
+              href="https://styled-components.com/"
+              icon={<span>💅</span>}
+            />
+            <HrefLink
+              href="https://tailwindcss.com/"
+              icon={<SiTailwindcss />}
+              className="tailwind-icon"
+            />
           </div>
         </div>
         <p className="inspired">
-          Inspired by: <a href="https://vercel.com/">https://vercel.com/</a>
+          Inspired by:{" "}
+          <HrefLink href="https://vercel.com/" text={"https://vercel.com/"} />
         </p>
       </div>
     </S.Section>
