@@ -6,6 +6,7 @@ import { rainbowBtnTheme } from "@/styles/themes";
 import { useGradientTransition } from "@/hooks/useGradientTransition";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import * as S from "./styles";
+import { HrefLink } from "@/components/common/HrefLink";
 
 export const Hero = () => {
   const transitionColor = useGradientTransition(5000);
@@ -76,7 +77,8 @@ export const Hero = () => {
           </div>
         </div>
         <p className="inspired">
-          Inspired by: <a href="https://vercel.com/">https://vercel.com/</a>
+          Inspired by:{" "}
+          <HrefLink href="https://vercel.com/" text={"https://vercel.com/"} />
         </p>
       </div>
     </S.Section>
