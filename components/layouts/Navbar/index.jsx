@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { GroupMotion, ItemMotion } from "./motion";
 import * as S from "./styles";
 
 export const Navbar = () => {
@@ -13,9 +15,14 @@ export const Navbar = () => {
 
   return (
     <S.Navigation>
-      <S.List>
+      <S.List
+        as={motion.ul}
+        variants={GroupMotion}
+        initial="hidden"
+        animate="visible"
+      >
         {items.map((item, index) => (
-          <S.ItemList key={index}>
+          <S.ItemList as={motion.li} variants={ItemMotion} key={index}>
             <Link href={item.url}>{item.text}</Link>
           </S.ItemList>
         ))}

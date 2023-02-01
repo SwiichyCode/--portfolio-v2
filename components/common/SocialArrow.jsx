@@ -13,7 +13,7 @@ const Container = styled.img`
   width: 100%;
   z-index: -2;
 
-  @media (max-width: 1110px) {
+  @media screen and (max-width: 880px) {
     display: block;
     width: 150px;
     left: -0px;

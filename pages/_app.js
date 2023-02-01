@@ -13,11 +13,13 @@ export default function App({ Component, pageProps }) {
   return (
     <Container backgroundState={backgroundState}>
       <GlobalStyle />
+
       {toolsState && (
         <RemoveScroll>
-          <Tools />
+          <Tools toolsState={toolsState} />
         </RemoveScroll>
       )}
+
       <AppWrapper>
         <Header />
         <Component {...pageProps} />
@@ -53,13 +55,14 @@ const Container = styled.div`
   background-color: #f5f5f5;
   filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.8));
   padding: 0 4.8rem;
+  overflow: hidden;
 
   @media (max-width: 1110px) {
     padding: 0 2.4rem;
-    /* height: 100vh; */
+    height: 100vh;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 450px) {
     padding: 0 1.2rem;
     height: 100%;
   }

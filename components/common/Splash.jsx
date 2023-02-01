@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Svg = styled.svg`
   position: absolute;
@@ -12,9 +13,27 @@ const Svg = styled.svg`
   rotate: ${(props) => `${props.rotate}deg`};
 `;
 
-export const Splash = ({ colors, size, top, bottom, left, right, rotate }) => {
+export const Splash = ({
+  colors,
+  size,
+  top,
+  bottom,
+  left,
+  right,
+  rotate,
+  delay,
+}) => {
   return (
     <Svg
+      as={motion.svg}
+      // initial={{ opacity: 0, x: -100 }}
+      // animate={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 0.7,
+        delay: delay,
+      }}
       size={size}
       top={top}
       bottom={bottom}

@@ -33,21 +33,7 @@ const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0 2.4rem;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: -50px;
-    width: 100%;
-    z-index: -2;
-    display: none;
-    @media (max-width: 1110px) {
-      display: block;
-      width: 150px;
-      left: -0px;
-      bottom: 0;
-    }
-  }
+  transition: all 0.3s ease-in-out;
 
   /* backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px); */
