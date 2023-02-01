@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import { Hero } from "@/components/pages/Hero";
-import { HeroStep } from "@/components/layouts/HeroStep";
+import { Home } from "@/components/pages/Home";
+import { HeroStep } from "@/components/common/HeroStep";
 
-export default function Home() {
+export default function Index() {
   return (
-    <HeroWrapper>
-      <Hero />
-      <HeroStep />
-    </HeroWrapper>
+    <HomeWrapper>
+      <Home />
+      {/* <HeroStep /> */}
+    </HomeWrapper>
   );
 }
 
-const HeroWrapper = styled.div`
+const HomeWrapper = styled.div`
   height: calc(100vh - var(--header-height));
   position: relative;
   display: flex;

@@ -1,5 +1,6 @@
-import { useEffect, useRef, useReducer } from "react";
 import styled from "styled-components";
+
+import { useEffect, useRef, useReducer } from "react";
 import { motion } from "framer-motion";
 import { TodoList } from "@/components/features/Tools/TodoList";
 
@@ -45,7 +46,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background: rgba(226, 232, 240, 0.95);
-  opacity: 1;
+  opacity: 0;
   z-index: 999;
   overflow: hidden;
 `;

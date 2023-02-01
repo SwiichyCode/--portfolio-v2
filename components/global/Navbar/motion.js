@@ -11,7 +11,7 @@ export const GroupMotion = {
 };
 
 export const ItemMotion = {
-  hidden: { y: -10, opacity: 0 },
+  hidden: { y: -15, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,

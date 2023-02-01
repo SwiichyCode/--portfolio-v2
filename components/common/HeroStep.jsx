@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
+// Todo: Need to refactor this component
+
 export const HeroStep = () => {
   return (
     <Container>
@@ -29,9 +31,6 @@ const Container = styled.section`
   flex-wrap: wrap;
   align-items: center;
   gap: var(--gap-24);
-  padding: 0rem 2.4rem;
-
-  /* padding: 0rem 0rem; */
 
   h3 {
     color: var(--text-color);

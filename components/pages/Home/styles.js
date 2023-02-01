@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { StyledButton } from "@/components/common/Button";
 
 export const Section = styled.section`
   width: 100%;
@@ -9,7 +8,6 @@ export const Section = styled.section`
   color: var(--text-color);
   filter: var(--filterShadow);
   padding: 15rem 2.4rem 8rem 2.4rem;
-  /* height: 100vh; */
 
   @media (max-width: 550px) {
     padding: 5rem 2.4rem 8rem 2.4rem;
@@ -76,6 +74,7 @@ export const Section = styled.section`
     .inspired {
       font-size: var(--font-size-16);
       font-weight: var(--font-weight-500);
+      margin-bottom: 4.8rem;
 
       a {
         color: var(--color-text);
@@ -122,38 +121,4 @@ export const Section = styled.section`
 
 export const Welcome = styled.img`
   width: 50px;
-`;
-
-export const ExploreButton = styled(StyledButton)`
-  position: relative;
-  width: 100%;
-  max-width: 13rem;
-  height: 3.8rem;
-  color: var(--color-white);
-
-  background: var(--color-black);
-  font-weight: 600;
-  padding: 0;
-
-  /* box-shadow: var(--shadow-large); */
-  box-shadow: 0 0 0 0 rgba(0, 210, 219, 0.7);
-  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-
-  @media (max-width: 550px) {
-    padding: 1rem 1.5rem;
-  }
-
-  &:hover {
-    background: var(--color-white);
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
-    max-width: ${(props) => `${props.mWidth - 2}px`};
-    animation: none;
-  }
-
-  @keyframes pulse {
-    to {
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-  }
 `;

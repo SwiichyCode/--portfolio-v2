@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BsGithub, BsTwitter } from "react-icons/bs";
-import { HrefLink } from "../common/HrefLink";
+import { HrefLink } from "@/components/base/HrefLink";
 
 export const NavSocial = () => {
   const items = [

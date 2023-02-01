@@ -1,3 +1,5 @@
+import { mixins } from "./mixins";
+
 export const rainbowBtnTheme = [
   {
     theme: "drop-shadow(0px 4px 4px rgba(0, 124, 240, 0.25))",
@@ -16,3 +18,7 @@ export const rainbowBtnTheme = [
   },
   // add more themes here
 ];
+
+export const theme = {
+  mixins,
+};

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Logo } from "@/components/common/Logo";
-import { Navbar } from "@/components/layouts/Navbar";
-import { NavSocial } from "@/components/layouts/NavSocial";
+import { Navbar } from "@/components/global/Navbar";
+import { NavSocial } from "@/components/global/NavSocial";
 import { ToolsAccessButton } from "@/components/common/ToolsAccessButton";
-import { Toggle } from "@/components/common/Toggle";
-import useStore from "@/stores/backgroundStore";
+import { Toggle } from "@/components/base/Toggle";
+import useStore from "@/stores/GlobalStateStore";
 import { SocialArrow } from "@/components/common/SocialArrow";
 
 export const Header = () => {

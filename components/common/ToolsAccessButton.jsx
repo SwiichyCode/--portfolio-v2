@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import useStore from "@/stores/backgroundStore";
+import useStore from "@/stores/GlobalStateStore";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { BsGear } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
