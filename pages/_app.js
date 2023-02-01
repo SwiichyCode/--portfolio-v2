@@ -3,7 +3,7 @@ import styled from "styled-components";
 import useStore from "@/stores/backgroundStore";
 import { Header } from "@/components/layouts/Header";
 import { RemoveScroll } from "react-remove-scroll";
-import { Tools } from "@/components/pages/Tools";
+import { Tools } from "@/components/features/Tools";
 import "../styles/main.css";
 
 export default function App({ Component, pageProps }) {
