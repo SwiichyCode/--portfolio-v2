@@ -6,8 +6,9 @@ import { ButtonRainbow } from "@/components/common/ButtonRainbow";
 import { rainbowBtnTheme } from "@/styles/themes";
 import { useGradientTransition } from "@/hooks/useGradientTransition";
 import { useWindowSize } from "@/hooks/useWindowSize";
-import * as S from "./styles";
 import { HrefLink } from "@/components/common/HrefLink";
+import { motion } from "framer-motion";
+import * as S from "./styles";
 
 export const Hero = () => {
   const transitionColor = useGradientTransition(5000);
@@ -32,6 +33,7 @@ export const Hero = () => {
         top={size.width > 550 ? 0 : -30}
         left={size.width > 550 ? 50 : -20}
         right={size.width > 550 ? null : 0}
+        delay={0.5}
       />
       <Splash
         colors="#00D2DB"
@@ -39,16 +41,30 @@ export const Hero = () => {
         bottom={230}
         right={size.width > 550 ? 50 : 0 || size.width < 550 ? -70 : 0}
         rotate={90}
+        delay={1}
       />
       <div className="hero-header">
         <span>hey!</span>
-        <S.Welcome src="/love-you-gesture.webp" />
+        <S.Welcome
+          as={motion.img}
+          initial={{ opacity: 0, rotate: -20 }}
+          animate={{ opacity: 1 }}
+          whileInView={{ rotate: 20 }}
+          transition={{
+            duration: 1,
+            repeat: 2,
+            repeatType: "reverse",
+            delay: 3,
+            opacity: 1,
+          }}
+          src="/love-you-gesture.webp"
+        />
       </div>
       <div className="hero-body">
-        <h1>
+        <motion.h1>
           I'm <span className="firstName">Dylan</span>{" "}
           <span className="secondName">Jansana,</span>
-        </h1>
+        </motion.h1>
         <p>
           Junior <strong>front-end developer</strong> specialized in integration
           and user interaction. I am currently focusing on developing my

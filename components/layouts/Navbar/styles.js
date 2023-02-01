@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Navigation = styled.nav`
-  @media screen and (max-width: 1110px) {
+  @media screen and (max-width: 880px) {
     display: none;
   }
 `;

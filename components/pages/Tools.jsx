@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -21,6 +20,7 @@ export const Tools = ({ toolsState }) => {
 };
 
 const Container = styled.div`
+  display: none;
   position: fixed;
   top: 0;
   left: 0;

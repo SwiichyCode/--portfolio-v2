@@ -32,6 +32,8 @@ export const ButtonRainbow = ({ onClick, themes, mWidth, children }) => {
 };
 
 const StyledRainbowButton = styled(StyledButton)`
+  display: flex;
+  align-items: center;
   width: 100%;
   max-width: ${(props) => `${props.mWidth}px`};
   filter: ${(props) => props.currentTheme.theme};

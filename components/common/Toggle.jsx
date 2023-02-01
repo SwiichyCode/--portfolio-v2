@@ -25,7 +25,6 @@ export const ToggleSwitchContainer = styled.div`
   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   border-radius: 45px;
   background-color: #f5f5f5;
-  opacity: 0.6;
   z-index: 1000;
 
   @media screen and (max-width: 1110px) {
@@ -46,7 +45,6 @@ export const ToggleSwitchContainer = styled.div`
     cursor: pointer;
     width: 60px;
     height: 30px;
-    background: var(--main-purple);
     border-radius: 100px;
     position: relative;
     transition: all 200ms ease-in-out;
@@ -62,7 +60,7 @@ export const ToggleSwitchContainer = styled.div`
     height: 22px;
     border-radius: 45px;
     transition: 0.2s;
-    background: var(--white);
+    background: var(--color-white);
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   }
 
