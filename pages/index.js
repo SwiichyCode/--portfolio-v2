@@ -12,6 +12,8 @@ export default function Home() {
 }
 
 const HeroWrapper = styled.div`
+  width: 100%;
+  max-width: 1550px;
   height: calc(100vh - var(--header-height));
   position: relative;
   display: flex;
@@ -19,9 +21,11 @@ const HeroWrapper = styled.div`
   align-items: center;
   margin-left: -4.8rem;
   padding-left: 4.8rem;
+  margin: 0 auto;
 
   @media (max-width: 550px) {
     height: 100%;
     padding-bottom: 4.8rem;
+    padding-left: 0;
   }
 `;

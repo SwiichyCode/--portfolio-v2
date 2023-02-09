@@ -2,6 +2,8 @@ import { useEffect, useRef, useReducer } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { TodoList } from "@/components/features/Tools/TodoList";
+import { Navbar } from "@/components/layouts/Navbar";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 const show = {
   opacity: 1,
@@ -18,6 +20,7 @@ const hide = {
 export const Tools = ({ toolsState }) => {
   const [ignored, fctMiseAJour] = useReducer((x) => x + 1, 0);
   const constraintsRef = useRef(null);
+  const size = useWindowSize();
 
   useEffect(() => {
     fctMiseAJour();
@@ -29,7 +32,8 @@ export const Tools = ({ toolsState }) => {
       ref={constraintsRef}
       animate={toolsState ? show : hide}
     >
-      <TodoList as={motion.div} drag dragConstraints={constraintsRef} />
+      {size.width < 880 && <Navbar mobile={true} />}
+      {/* <TodoList as={motion.div} drag dragConstraints={constraintsRef} /> */}
     </Container>
   );
 };

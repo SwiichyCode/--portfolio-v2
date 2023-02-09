@@ -4,11 +4,11 @@ import styled from "styled-components";
 export const PageLayout = ({ children, fTitle, sTitle, subTitle }) => {
   return (
     <Container>
-      <HeaderWrapper>
+      {/* <HeaderWrapper>
         <h1>{fTitle}</h1>
         <h2>{sTitle}</h2>
         <p>{subTitle}</p>
-      </HeaderWrapper>
+      </HeaderWrapper> */}
       {children}
     </Container>
   );
@@ -16,8 +16,21 @@ export const PageLayout = ({ children, fTitle, sTitle, subTitle }) => {
 
 const Container = styled.section`
   width: 100%;
-  height: calc(100vh - var(--header-height));
-  padding: 10rem 2.4rem;
+  max-width: 1550px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0rem 10%; */
+  /* background-image: linear-gradient(
+    180deg,
+    transparent 0%,
+
+    rgba(255, 255, 255, 0.651) 50%,
+    rgba(255, 255, 255, 1) 100%
+  ); */
+  padding: 0 2.4rem;
+  margin: 0 auto;
 `;
 
 const HeaderWrapper = styled.div`
@@ -26,6 +39,7 @@ const HeaderWrapper = styled.div`
   gap: 1.6rem;
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
+  padding-top: calc(4.8rem + 2rem);
 
   h1 {
     font-size: 2.4rem;

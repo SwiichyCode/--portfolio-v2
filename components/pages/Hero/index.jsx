@@ -31,7 +31,7 @@ export const Hero = () => {
         colors="#FBA234"
         size={120}
         top={size.width > 550 ? 0 : -30}
-        left={size.width > 550 ? 50 : -20}
+        left={size.width > 550 ? 50 : -70}
         right={size.width > 550 ? null : 0}
         delay={0.5}
       />
@@ -77,9 +77,9 @@ export const Hero = () => {
           <S.ExploreButton onClick={handleClickScroll}>
             Start {size.width > 550 && "Exploration"}
           </S.ExploreButton>
-          <ButtonRainbow themes={rainbowBtnTheme} mWidth={130}>
+          {/* <ButtonRainbow themes={rainbowBtnTheme} mWidth={130}>
             {size.width > 550 && "Get a"} Resume
-          </ButtonRainbow>
+          </ButtonRainbow> */}
           <div className="icons">
             <p>Built with:</p>
             <HrefLink

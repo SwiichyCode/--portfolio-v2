@@ -12,7 +12,7 @@ export const Section = styled.section`
   /* height: 100vh; */
 
   @media (max-width: 550px) {
-    padding: 5rem 2.4rem 8rem 2.4rem;
+    padding: 5rem 2.4rem 4rem 2.4rem;
   }
 
   .hero-header {
